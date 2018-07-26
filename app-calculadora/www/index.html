@@ -68,6 +68,20 @@
 		console.log(valor_1, valor_operacao, valor_2);
 	});
 
+	operacao.on("click", function(){
+		//armazena o primeiro valor
+		valor_1 = $(".inferior").text();
+		//armazeno qual a operação
+		valor_operacao =  $(this).text();
+
+		//capaturo o valor da operação
+		valor_antes_concatenar = $(".inferior").text();
+		//seto em inferior o valor com a operação
+		$(".inferior").text(valor_antes_concatenar+valor_operacao);
+
+//		console.log(valor_1, valor_2, valor_operacao);
+	});
+
 </script>
 </body>
 </html>
