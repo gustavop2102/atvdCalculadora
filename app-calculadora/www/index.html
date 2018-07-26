@@ -82,6 +82,44 @@
 //		console.log(valor_1, valor_2, valor_operacao);
 	});
 
+	igual.on("click", function(){
+		resultado = null;
+
+		//Converte valores para número
+		valor_1 = parseFloat(valor_1);
+		valor_2 = parseFloat(valor_2);
+
+		//Verifica qual a operação e a realiza
+		if(valor_operacao == "+"){
+			resultado = valor_1 + valor_2;
+			console.log(resultado);
+		} else if (valor_operacao == "-"){
+			resultado = valor_1 - valor_2;
+			console.log(resultado);
+		} else if (valor_operacao == "x"){
+			resultado = valor_1 * valor_2;
+			console.log(resultado);
+		} else if (valor_operacao == "÷"){
+			resultado = valor_1 / valor_2;
+			console.log(resultado);
+		} else if(valor_operacao == "%"){
+			resultado = (valor_1 * valor_2)/100
+		}
+
+		//mostrar a operação na parte superior;
+		if ($(".superior").text() == "") {
+			$(".superior").text(valor_1+valor_operacao+valor_2);
+		} else{
+			$(".superior").text($(".superior").text()+ valor_operacao + valor_2);
+		}
+		//mostrar resultado na parte inferior;
+		$(".inferior").text(resultado);
+
+		valor_operacao = null;
+		valor_2 = "";
+
+	});
+
 </script>
 </body>
 </html>
