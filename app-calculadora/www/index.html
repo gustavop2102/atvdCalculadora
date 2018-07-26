@@ -120,6 +120,17 @@
 
 	});
 
+	inverter_sinal.on("click", function(){
+
+		if (valor_operacao != null) {
+			valor_2 = valor_2 * -1;
+			$(".inferior").text(valor_1 + "" + valor_operacao + "" + (parseFloat(valor_2)));
+		} else{
+			$(".inferior").text($(".inferior").text() * -1 );
+		}
+
+	});
+
 </script>
 </body>
 </html>
