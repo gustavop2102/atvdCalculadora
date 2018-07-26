@@ -51,6 +51,23 @@
 	var valor_2 = "";
 	var valor_operacao = null;
 
+	numero.on("click",function(){
+		//capturar texto dentro do elemento
+		valor = $(this).text();
+
+		console.log(valor);
+		//capturar resultado presente no elemento inferior
+		//valor antes
+		valor_antes_concatenar = $(".inferior").text();
+		//concatenar valor digitado com valor antes e setar em inferior
+		$(".inferior").text(valor_antes_concatenar+valor);
+		//se ele já escolheu a operação, então começa a armazenar o segundo valor
+		if(valor_operacao != null){
+			valor_2 += valor;
+		}
+		console.log(valor_1, valor_operacao, valor_2);
+	});
+
 </script>
 </body>
 </html>
