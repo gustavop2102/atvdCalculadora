@@ -30,3 +30,29 @@ body section h2{
 	box-sizing: border-box;
 	padding: 2.5vh 6vw; 
 }
+body section ul{
+	display: flex;
+	flex-wrap: wrap;
+	width: 100vw;
+	background: white;
+}
+body section ul li{
+	width: 25vw;
+	text-align: center;
+	font-size: 1.7em;
+	height: 15vh;
+	color: rgba(0,0,0, 0.8);
+	border: 1px solid rgba(0,0,0, 0.07);
+	box-sizing: border-box;
+	line-height: 15vh;
+}
+body section ul li:active{
+	background: rgba(0,0,0, 0.07);
+}
+body section ul li.zero{
+	width: 50vw;
+}
+body section ul li.igual{
+	background: #f8506b;
+	color: white;
+}
