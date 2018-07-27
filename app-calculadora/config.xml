@@ -5,7 +5,7 @@
         Uma simples calculadora criada na disciplina de programação web.
     </description>
     <author email="wellirigo@gmail.com" href="#">
-        Welliton Rigo
+        Welliton Rigo e Gustavo Puerari
     </author>
     <content src="index.html" />
     <plugin name="cordova-plugin-whitelist" spec="1" />
