@@ -30,3 +30,13 @@ body section h2{
 	box-sizing: border-box;
 	padding: 2.5vh 6vw; 
 }
+body section ul li:active{
+	background: rgba(0,0,0, 0.07);
+}
+body section ul li.zero{
+	width: 50vw;
+}
+body section ul li.igual{
+	background: #f8506b;
+	color: white;
+}
