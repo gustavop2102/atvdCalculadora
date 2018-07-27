@@ -11,3 +11,22 @@ body section{
 	font-family: futura,"calibri";	
 	height: 100vh;
 }
+body section h2{
+	width: 100vw;
+	background: white;
+	text-align: right;
+	font-size: 1.4em;
+	height: 11vh;
+	box-sizing: border-box;
+	padding: 2.5vh 6vw; 
+}
+body section h1{
+	width: 100vw;
+	background: #6732ff;
+	text-align: right;
+	font-size: 8vh;
+	color: white;
+	height: 14vh;
+	box-sizing: border-box;
+	padding: 3.5vh 6vw 0 0;
+}
